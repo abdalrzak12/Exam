@@ -1,5 +1,6 @@
 // main.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_maps_am3/loginScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,21 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ww',
-      theme: ThemeData(
-     
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home:My() 
-    );
-  }
-}
-class My extends StatelessWidget {
-  const My({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
+        debugShowCheckedModeBanner: false,
+        title: 'ww',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: Loginscreen());
   }
 }
